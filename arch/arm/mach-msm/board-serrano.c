@@ -2737,7 +2737,10 @@ static struct android_usb_platform_data android_usb_pdata = {
 #else
 	.cdrom = false,
 #endif
+
+#ifdef CONFIG_USB_ANDROID_SAMSUNG_COMPOSITE
 	.nluns = 0,
+#endif
 };
 
 static struct platform_device android_usb_device = {
