@@ -1181,6 +1181,7 @@ static int sdfat_create(struct inode *dir, struct dentry *dentry, umode_t mode,
 {
 	return __sdfat_create(dir, dentry);
 }
+#endif
 
 /*************************************************************************
  * WRAP FUNCTIONS FOR DEBUGGING
